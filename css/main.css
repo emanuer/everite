@@ -3,3 +3,52 @@
 .text-left{
 	text-align: left;
 }
+.box{
+	height:60px;
+
+}
+#editor{
+	padding: 10px;
+}
+#editor .ace_scroller {
+	background:White;
+	
+}
+#editor .ace_scroller.ace_scroll-left {
+	box-shadow:none;
+}
+.ace_layer .ace_gutter-layer .ace_folding-enabled {
+	background:white;
+}
+.ace_line{
+	padding: 2px 5px; !important;
+	font-size: 18px;
+}
+
+
+.ace_editor{
+	background:white;
+	border: 1px solid #ffffff !important;
+}
+.ace_editor {
+	background: white;
+		  -webkit-border-radius: 6px !important;
+     -moz-border-radius: 6px !important;
+          border-radius: 6px !important;
+          
+}
+pre#editor {
+	
+
+}
+ .ace_gutter .ace_gutter-active-line{
+	background:#ffffff;
+}
+pre#editor .ace_gutter{
+	background-color: #ffffff !important; 
+}
+.ace-line .ace_indent-guide{
+	background-color: #ffffff;
+}
+.ace-tomorrow .ace_marker-layer .ace_active-line {
+background: FFFFFF;
