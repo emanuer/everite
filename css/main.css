@@ -20,11 +20,10 @@
 .ace_layer .ace_gutter-layer .ace_folding-enabled {
 	background:white;
 }
-.ace_line{
-	padding: 2px 5px; !important;
-	font-size: 18px;
-}
 
+.ace_scroller .ace_scroll-left{
+	left: 46px; right: 0px; 
+}
 
 .ace_editor{
 	background:white;
@@ -40,6 +39,9 @@
 pre#editor {
 	
 
+}
+.ace_gutter{
+	display:none;
 }
  .ace_gutter .ace_gutter-active-line{
 	background:#ffffff;

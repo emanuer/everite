@@ -33,7 +33,7 @@ ace.define('ace/theme/tomorrow', ['require', 'exports', 'module' , 'ace/lib/dom'
 exports.isDark = false;
 exports.cssClass = "ace-tomorrow";
 exports.cssText = ".ace-tomorrow .ace_gutter {\
-background: #f6f6f6;\
+background: #FFFFFF;\
 color: #4D4D4C\
 }\
 .ace-tomorrow .ace_print-margin {\
@@ -68,10 +68,10 @@ margin: -1px 0 0 -1px;\
 border: 1px solid #D1D1D1\
 }\
 .ace-tomorrow .ace_marker-layer .ace_active-line {\
-background: #EFEFEF\
+background: #FFFFFF\
 }\
 .ace-tomorrow .ace_gutter-active-line {\
-background-color : #dcdcdc\
+background-color : #FFFFFF\
 }\
 .ace-tomorrow .ace_marker-layer .ace_selected-word {\
 border: 1px solid #D6D6D6\
