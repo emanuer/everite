@@ -10,7 +10,8 @@
     }
     
     #editor { 
-        margin: 0;
+    		width: 800px;
+        margin: 0 auto;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -31,7 +32,7 @@
 <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/everite");
+    editor.setTheme("ace/theme/tomorrow");
     editor.getSession().setMode("ace/mode/javascript");
 </script>
 
