@@ -4,19 +4,9 @@
 .text-left{
 	text-align: left;
 }
-<<<<<<< HEAD
-pre#editor	{border:none; border-radius:none;}
 
-#editor .ace_text-layer	{color:#888;}
-#editor .ace-tomorrow .ace_marker-layer .ace_active-line{
-	background:transparent;
-	color:#222;
-}
-#editor .ace_scroller.ace_scroll-left {box-shadow:none;
-}
-#editor .ace_cursor {border-color:#2Bb1f2;}
-.ace_line::selection {background:#1BA1E2!important;}
-=======
+
+
 .box{
 	height:60px;
 
@@ -58,7 +48,7 @@ pre#editor {
 	display:none;
 }
  .ace_gutter .ace_gutter-active-line{
-	background:#ffffff;
+	background:#f5f5f5;
 }
 pre#editor .ace_gutter{
 	background-color: #ffffff !important; 
@@ -67,5 +57,16 @@ pre#editor .ace_gutter{
 	background-color: #ffffff;
 }
 .ace-tomorrow .ace_marker-layer .ace_active-line {
-background: FFFFFF;
->>>>>>> b3b99cf668139712577b15a95cec910a6864e2fd
+background: #f5f5f5;
+}
+
+pre#editor	{border:none; border-radius:none;}
+
+#editor .ace_text-layer	{color:#888;}
+#editor .ace-tomorrow .ace_marker-layer .ace_active-line{
+	background:transparent;
+	color:#222;
+}
+#editor .ace_scroller.ace_scroll-left {box-shadow:none;
+}
+#editor .ace_cursor {border-color:#2Bb1f2;}
