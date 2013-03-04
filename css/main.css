@@ -1,5 +1,17 @@
 /*created by Elle Sakamoto*/
-
+.container	{max-width:940px;}
+#editor .ace_gutter		{display:none;}
 .text-left{
 	text-align: left;
 }
+pre#editor	{border:none; border-radius:none;}
+
+#editor .ace_text-layer	{color:#888;}
+#editor .ace-tomorrow .ace_marker-layer .ace_active-line{
+	background:transparent;
+	color:#222;
+}
+#editor .ace_scroller.ace_scroll-left {box-shadow:none;
+}
+#editor .ace_cursor {border-color:#2Bb1f2;}
+.ace_line::selection {background:#1BA1E2!important;}

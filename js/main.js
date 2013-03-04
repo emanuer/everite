@@ -1,10 +1,16 @@
 
+
 var fireBase = new Firebase ("https://write.firebaseio.com/");
 
 
+$('#editor').one('mousedown', function(e){
+
+	editor.setValue("");
+	
+});
+
 $('#editor').on('keyup', function(e){
 	if(e.keyCode === 13){
-console.log("Enter Key!")
 		newFirebase().set({allCode : editor.getValue()})
 	} else {
 	pushChange();
@@ -41,9 +47,8 @@ var setNewRange = function(startrow, endrow){
     return newRange;
 }
 var newFirebase = function(){
-	var now = new Date().getTime()
-console.log(now);
-	var newChild = fireBase.child(now.toString(10))
+	var now = new Date().getTime();
+	var newChild = fireBase.child(now.toString(10));
 	return newChild;
 }
 

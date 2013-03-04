@@ -10,44 +10,7 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-        font-family: "Courier New";
-      }
 
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 60px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 72px;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-    </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
@@ -66,58 +29,37 @@
 
   <body>
 
-    <div class="container-narrow">
-<!--
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="muted">Alwaysrite</h3>
-      </div>
--->
-      <hr>
-
-      <div class="pagination-centered">
-        <h1>Alwaysrite always make notes!</h1>
-        <p class="lead text-left">Alwaysrite - write notes always, never loose, always with you</p>
-       <!-- <a class="btn btn-large btn-success" href="#">Sign up today</a>-->
-      </div>
+    <div class="container">
 
       <hr>
 
       <div class="row-fluid marketing">
-        <div class="span6">
-          <h4>test</h4>
-          <p>Test</p>
+        <div class="span12">
+<pre id="editor">Start Typing...</pre>
         </div>
       </div>
 
-      <hr>
-
-      <div class="footer">
-        <p>&copy; Company 2013</p>
-      </div>
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+  var editor = ace.edit("editor");
+  editor.setTheme("ace/theme/tomorrow");
+  editor.getSession().setMode("ace/mode/text");
+  editor.setFontSize(21);
+  editor.getSession().setUseWrapMode(true);
+  editor.setShowPrintMargin(false)
+
+  var windowHeight = window.innerHeight;
+  document.getElementById("editor").style.height = windowHeight-75 + "px";
+
+</script>
+<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 
   </body>
 </html>
